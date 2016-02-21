@@ -7,9 +7,7 @@ extra-deps: []
 
 # Override default flag values for local packages and extra-deps
 flags:
-  fltkhs-fluid-examples:
-    fastcompile: true
-  fltkhs-demos:
+  fltkhs-hello-world:
     fastcompile: true
 
 # Control whether we use the GHC we find on the path
