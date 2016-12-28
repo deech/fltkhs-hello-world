@@ -1,5 +1,5 @@
 flags: {}
 extra-deps:
-- fltkhs-0.5.0.0
+- fltkhs-0.5.0.1
 - text-1.2.2.0
 resolver: lts-5.3
