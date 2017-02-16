@@ -1,5 +1,4 @@
 flags: {}
-resolver: lts-7.16
+resolver: lts-8.0
 extra-deps:
-- fltkhs-0.5.0.7
-- text-1.2.2.0
+- fltkhs-0.5.0.9

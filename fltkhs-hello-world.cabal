@@ -25,11 +25,14 @@ Executable fltkhs-hello-world
   Hs-Source-Dirs: src/
   Build-Depends:
     base == 4.*,
-    fltkhs >= 0.5.0.7
+    fltkhs >= 0.5.0.9,
+    text >= 1.2.2.0
   default-language: Haskell2010
   ghc-Options: -debug -dcore-lint
   if impl(ghc >= 7.10) && flag(FastCompile)
      ghc-Options: -fno-specialise -fmax-simplifier-iterations=0 -fsimplifier-phases=0
+  else
+     ghc-Options: -O2
   if os(windows)
    ghc-Options: -pgml g++ "-optl-Wl,--whole-archive" "-optl-Wl,-Bstatic" "-optl-Wl,-lfltkc" "-optl-Wl,-Bdynamic" "-optl-Wl,--no-whole-archive"
   if os(darwin)
