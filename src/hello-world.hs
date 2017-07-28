@@ -4,7 +4,6 @@ import qualified Graphics.UI.FLTK.LowLevel.FL as FL
 import Graphics.UI.FLTK.LowLevel.Fl_Types
 import Graphics.UI.FLTK.LowLevel.FLTKHS
 
-
 buttonCb :: Ref Button -> IO ()
 buttonCb b' = do
   l' <- getLabel b'
@@ -12,8 +11,8 @@ buttonCb b' = do
     then setLabel b' "Goodbye world"
     else setLabel b' "Hello world"
 
-main :: IO ()
-main = do
+ui :: IO ()
+ui = do
  window <- windowNew
            (Size (Width 115) (Height 100))
            Nothing
@@ -26,5 +25,9 @@ main = do
  setCallback b' buttonCb
  end window
  showWidget window
- _ <- FL.run
- return ()
+
+main :: IO ()
+main = ui >> FL.run >> FL.flush
+
+replMain :: IO ()
+replMain = ui >> FL.replRun
