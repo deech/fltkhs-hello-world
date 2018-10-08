@@ -32,7 +32,7 @@ myBuildHook pkg_descr local_bld_info user_hooks bld_flags =
     [] -> keepBuilding
     (_,[]):_ -> keepBuilding
     (_, (packageInfo:_)):_ ->
-       mapM_ (updateEnv "LIBRARY_PATH") (libraryDirs packageInfo) >>
+       mapM_ (updateEnv "LIBRARY_PATH") ((libraryDirs packageInfo) ++ (map (\fp -> fp </> "c-lib") (libraryDirs packageInfo))) >>
        keepBuilding
 
 updateEnv :: String -> String -> IO ()
