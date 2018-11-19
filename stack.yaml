@@ -2,3 +2,10 @@ flags: {}
 resolver: lts-12.12
 extra-deps:
 - fltkhs-0.6.0.0
+
+nix:
+  packages:
+    - autoconf
+    - pkgconfig
+    - xorg.libX11
+    - xorg.libXft
