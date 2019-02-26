@@ -1,7 +1,7 @@
 flags: {}
 resolver: lts-12.12
 extra-deps:
-- fltkhs-0.7.0.2
+- fltkhs-0.7.0.3
 
 nix:
   packages:
