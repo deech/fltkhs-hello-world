@@ -17,7 +17,7 @@ source-repository head
 
 custom-setup
   setup-depends:
-      Cabal >=2.2.0.0 && <3
+      Cabal >=2.4.0.0 && <4
     , base >=4.4
     , filepath
 
@@ -31,7 +31,7 @@ Executable fltkhs-hello-world
   Hs-Source-Dirs: src/
   Build-Depends:
     base == 4.*,
-    fltkhs >= 0.8.0.2,
+    fltkhs >= 0.8.0.3,
     text >= 1.2.2.0
   default-language: Haskell2010
   ghc-Options: -Werror -threaded
