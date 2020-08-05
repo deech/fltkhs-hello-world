@@ -1,11 +1,5 @@
 flags: {}
-resolver: lts-15.0
+resolver: nightly-2020-07-23
 extra-deps:
-- fltkhs-0.8.0.3
-
-nix:
-  packages:
-    - autoconf
-    - pkgconfig
-    - xorg.libX11
-    - xorg.libXft
+- git: git@github.com:deech/fltkhs
+  commit: e63aef93c651dff205ded3282e4675571301c9a3
