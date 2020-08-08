@@ -3,4 +3,5 @@ packages: .
 source-repository-package
   type:git
   location: git@github.com:deech/fltkhs
-  tag: e63aef93c651dff205ded3282e4675571301c9a3
+  tag: 28942e589bda30bbc4a21f086ab2da392adb7323
+  subdir: fltkhs

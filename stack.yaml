@@ -2,4 +2,6 @@ flags: {}
 resolver: nightly-2020-07-23
 extra-deps:
 - git: git@github.com:deech/fltkhs
-  commit: e63aef93c651dff205ded3282e4675571301c9a3
+  commit: 22162a2c29e0e30b210fa15c5c6408306308480c
+  subdirs:
+    - fltkhs
